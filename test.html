@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список товаров</title>
+    <link rel="stylesheet" href="test.css"> <!-- Подключаем CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Список товаров</h1>
+    </header>
+    <main>
+        <div id="filters" class="filters">
+            <input type="text" id="nameFilter" placeholder="Фильтр по названию">
+            <input type="number" id="priceFilter" placeholder="Фильтр по цене">
+            <input type="text" id="brandFilter" placeholder="Фильтр по бренду">
+            <button id="applyFiltersBtn">Применить фильтры</button>
+        </div> <!-- Здесь будем выводить поля для ввода фильтров -->
+        <div id="products-list" class="products-list">
+            
+        </div> <!-- Здесь будем выводить список товаров -->
+        <div id="pagination" class="pagination">
+            <button id="prevPageBtn" class="pagination-button">Предыдущая страница</button>
+            <span id="pageIndicator">Страница 1</span>
+            <button id="nextPageBtn" class="pagination-button">Следующая страница</button>
+        </div> <!-- Здесь будем выводить пагинацию -->
+    </main>
+    <script src="test.js"></script> <!-- Подключаем JavaScript -->
+</body>
+
+</html>
